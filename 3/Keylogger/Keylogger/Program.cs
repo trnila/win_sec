@@ -37,7 +37,7 @@ namespace AudioPlayer {
 		}
 
 		public static void Main() {
-			using (var s = new StreamWriter(new AlternateStream(@"C:\a\hello.txt", "test.txt", true))) {
+			/*using (var s = new StreamWriter(new AlternateStream(@"C:\a\hello.txt", "test.txt", true))) {
 				s.WriteLine("Hello world!");
 				s.WriteLine("hello");
 			}
@@ -45,7 +45,7 @@ namespace AudioPlayer {
 			using (var s = new StreamReader(new AlternateStream(@"C:\a\hello.txt", "test.txt"))) {
 				Console.WriteLine(s.ReadLine());
 				Console.WriteLine(s.ReadLine());
-			}
+			}*/
 
 			// traverse whole filesystem and try all filenames as key to decrypt secret.xml
 			var secrets = Secret.Unlock();
