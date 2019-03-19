@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="103.32479mm"
+   height="76.914452mm"
+   viewBox="0 0 103.32479 76.914452"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   sodipodi:docname="cores.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="190.61699"
+     inkscape:cy="50.345377"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="1918"
+     inkscape:window-height="1059"
+     inkscape:window-x="0"
+     inkscape:window-y="19"
+     inkscape:window-maximized="0"
+     showguides="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4780"
+       originx="-36.949391"
+       originy="-214.21949" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-36.949391,-5.8660579)">
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.18600357px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect4747"
+       width="103.13879"
+       height="76.728447"
+       x="37.042393"
+       y="5.9590597" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.15309381px;line-height:2.4231832px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25956836px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="47.445251"
+       y="21.069992"
+       id="text4753-3"
+       transform="scale(1.0193203,0.98104587)"><tspan
+         sodipodi:role="line"
+         id="tspan4751-6"
+         x="47.445251"
+         y="21.069992"
+         style="stroke-width:0.25956836px">ARM Cortex-A53</tspan></text>
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.25826067px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect4757-7"
+       width="43.656246"
+       height="18.520834"
+       x="43.65625"
+       y="9.927083" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.15309381px;line-height:2.42318296px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25956836px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="92.869713"
+       y="21.06999"
+       id="text4753-3-3"
+       transform="scale(1.0193203,0.98104589)"><tspan
+         sodipodi:role="line"
+         id="tspan4751-6-5"
+         x="92.869713"
+         y="21.06999"
+         style="stroke-width:0.25956836px">ARM Cortex-A53</tspan></text>
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.25826067px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect4757-7-6"
+       width="43.656246"
+       height="18.520834"
+       x="89.958336"
+       y="9.9270821" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.15309381px;line-height:2.42318296px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25956836px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="47.445255"
+       y="42.645603"
+       id="text4753-3-9"
+       transform="scale(1.0193203,0.98104589)"><tspan
+         sodipodi:role="line"
+         id="tspan4751-6-3"
+         x="47.445255"
+         y="42.645603"
+         style="stroke-width:0.25956836px">ARM Cortex-A53</tspan></text>
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.25826067px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect4757-7-60"
+       width="43.656246"
+       height="18.520834"
+       x="43.65625"
+       y="31.09375" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.15309381px;line-height:2.42318273px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25956836px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="92.869713"
+       y="42.645603"
+       id="text4753-3-3-6"
+       transform="scale(1.0193203,0.98104589)"><tspan
+         sodipodi:role="line"
+         id="tspan4751-6-5-2"
+         x="92.869713"
+         y="42.645603"
+         style="stroke-width:0.25956836px">ARM Cortex-A53</tspan></text>
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.25799999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4757-7-6-6"
+       width="43.656246"
+       height="18.520834"
+       x="89.958344"
+       y="31.09375" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.15309381px;line-height:2.42318273px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25956836px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="47.108631"
+       y="60.175789"
+       id="text4753-3-9-1"
+       transform="scale(1.0193203,0.98104589)"><tspan
+         sodipodi:role="line"
+         id="tspan4751-6-3-8"
+         x="47.108631"
+         y="60.175789"
+         style="stroke-width:0.25956836px">ARM Cortex-M4F</tspan></text>
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.258;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4757-7-60-7"
+       width="43.656246"
+       height="10.583339"
+       x="43.656258"
+       y="52.260414" />
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.25799999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4757-7-60-7-0"
+       width="43.656246"
+       height="10.583339"
+       x="89.958336"
+       y="52.260414" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:2.47000003px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25799999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="94.872032"
+       y="59.093075"
+       id="text4939"><tspan
+         sodipodi:role="line"
+         id="tspan4937"
+         x="94.872032"
+         y="59.093075"
+         style="stroke-width:0.25799999;stroke-miterlimit:4;stroke-dasharray:none">SDMA</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:2.47000003px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25799999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="116.58677"
+       y="59.093075"
+       id="text4939-7"><tspan
+         sodipodi:role="line"
+         id="tspan4937-5"
+         x="116.58677"
+         y="59.093075"
+         style="stroke-width:0.25799999;stroke-miterlimit:4;stroke-dasharray:none">SDMA</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4991"
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:9.33543301px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="scale(0.26458333)"><flowRegion
+         id="flowRegion4993"><rect
+           id="rect4995"
+           width="330"
+           height="50"
+           x="170"
+           y="252.51968" /></flowRegion><flowPara
+         id="flowPara4997" /></flowRoot>    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 112.44792,52.260417 V 62.843751"
+       id="path5003"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.258;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4757-7-60-7-9"
+       width="89.958328"
+       height="10.583339"
+       x="43.65625"
+       y="65.489578" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.15309381px;line-height:2.42318273px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25956836px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="76.311081"
+       y="73.660545"
+       id="text4753-3-9-1-3"
+       transform="scale(1.0193203,0.98104589)"><tspan
+         sodipodi:role="line"
+         id="tspan4751-6-3-8-6"
+         x="76.311081"
+         y="73.660545"
+         style="stroke-width:0.25956836px">GPU cores</tspan></text>
+  </g>
+</svg>
