@@ -3,8 +3,8 @@ svgs=$(wildcard figures/*.svg)
 all: ${svgs:.svg=.pdf} main.pdf
 
 main.pdf:
-	pdflatex main.tex
-	pdflatex main.tex
+	pdflatex -shell-escape main.tex
+	pdflatex -shell-escape main.tex
 
 figures/%.pdf: figures/%.svg
 	inkscape -D -z --file=$^ --export-pdf=$@
