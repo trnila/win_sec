@@ -53,5 +53,3 @@ function prepare_2() {
 
 prepare_1 > gen/1.ps1
 prepare_2 > gen/2.ps1
-
-gen/2.ps1
