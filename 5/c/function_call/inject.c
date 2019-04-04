@@ -60,8 +60,8 @@ void inject_returncode(HANDLE handle) {
 
 void inject_call_add(HANDLE handle) {
 	union {
-		uint8_t bytes[4];
-		uint32_t addr;
+		uint8_t bytes[8];
+		uint64_t addr;
 	} fn;
 	fn.addr = remote_add;
 
@@ -69,7 +69,8 @@ void inject_call_add(HANDLE handle) {
 		0xB9, 0x01, 0x00, 0x00, 0x00,                                          // mov ecx, 1
 	       	0xBA, 0x02, 0x00, 0x00, 0x00,                                          // mov edx, 2
 	       	0x41, 0xB8, 0x03, 0x00, 0x00, 0x00,                                    // mov r8d, 3
-	       	0x48, 0xC7, 0xC0, fn.bytes[0], fn.bytes[1], fn.bytes[2], fn.bytes[3],  // mov rax, remote_add
+	       	0x48, 0xB8, fn.bytes[0], fn.bytes[1], fn.bytes[2], fn.bytes[3],
+	                    fn.bytes[4], fn.bytes[5], fn.bytes[6], fn.bytes[7],        // mov rax, remote_add
 	       	0xFF, 0xE0                                                             // jmp rax
 	};
 	void *remote_mem = VirtualAllocEx(handle, NULL, sizeof(instructions), MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE);
@@ -115,7 +116,7 @@ int main(int argc, char **argv) {
 
 	call_array(handle);
 	inject_returncode(handle);
-//	inject_call_add(handle);
+	inject_call_add(handle);
 
 	return 0;
 }
