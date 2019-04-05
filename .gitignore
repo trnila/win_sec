@@ -19,3 +19,4 @@ _minted*
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
+*.dll

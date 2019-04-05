@@ -1,4 +1,4 @@
-TARGETS=inject.exe powershell.dll powershell.h
+TARGETS=inject.exe powershell.dll attacker_stop.dll powershell.h
 include ../common.mk
 
 powershell.h: ../../../4/gen/1.ps1

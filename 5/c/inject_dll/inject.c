@@ -3,10 +3,6 @@
 #include <stdint.h>
 #include "../common.h"
 
-void get_run_addr() {
-
-}
-
 int main(int argc, char **argv) {
 	if(argc <= 2) {
 		fprintf(stderr, "Usage: %s process_name path/to.dll\n", argv[0]);
@@ -56,6 +52,10 @@ int main(int argc, char **argv) {
 	DWORD dll_base;
 	GetExitCodeThread(t, &dll_base);
 	printf("DLL base: %x\n", dll_base);
+	if(dll_base == 0) {
+		printf("Unable to load dll into the process");
+		return 1;
+	}
 
 	// load DLL to our process so we can get offset address of function 'run'
 	// attention: this executes code of DllMain in our process!
@@ -81,14 +81,14 @@ int main(int argc, char **argv) {
 	}
 
 	// Release dll from remote process
-	if(!(t = CreateRemoteThread(handle, NULL, 0, FreeLibrary, dll_base, NULL, NULL))) {
+/*	if(!(t = CreateRemoteThread(handle, NULL, 0, FreeLibrary, dll_base, NULL, NULL))) {
 		winerror("CreateRemoteThread");
 		return 1;
 	}
 	WaitForSingleObject(t, INFINITE);
 	DWORD status;
 	GetExitCodeThread(t, &status);
-	printf("return code: %x\n", status);
+	printf("return code: %x\n", status);*/
 
 	return 0;
 }
